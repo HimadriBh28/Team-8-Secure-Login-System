@@ -6,14 +6,18 @@
   <title>SecureAuth - Secure Authentication System</title>
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
-<body>
+
+  
   <div class="interactive-bg">
     <div class="bg-grid"></div>
   </div>
+  
+
 
   <header>
-    <a href="#" class="logo">SecureAuth</a>
+    <a href="#" class="logo">ShoeRender</a>
     <nav>
       <a href="#">Home</a>
       <a href="#">Security</a>
@@ -31,10 +35,17 @@
       </button>
     </div>
   </header>
+  
+
+
+<div class="image-left">
+  <img src="assets/Image.jpeg" alt="Description">
+</div>
+
+
 
   <section>
-    <h1>Secure Authentication System</h1>
-    <p>Protecting your digital identity with advanced security measures</p>
+    <h1>SHOP <span class="auto-type"></span></h1>
     <button class="cta-btn border-btn">
       <span>Get Started</span>
       <div class="border"></div>
@@ -137,6 +148,16 @@
     </div>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var typed = new Typed('.auto-type', {
+        strings: ["NIKE", "NEW BALANCE", "PUMA", "SKETCHERS"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+      });
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
